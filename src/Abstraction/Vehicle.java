@@ -6,17 +6,18 @@ public abstract class Vehicle {
 }
 
 
-class Car extends Vehicle{
+class Car extends Vehicle {
 
     @Override
     public void start() {
         System.out.println("Car is starting");
     }
 
-    public static void main(String[] args){
-            Car c = new Car();
-            c.start();
-        }
+    public static void main(String[] args) {
 
+        Car c = new Car();
+        c.start();
+    }
 
 }
+
