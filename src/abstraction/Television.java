@@ -1,4 +1,4 @@
-package Abstraction;
+package abstraction;
 
 public abstract class Television {
     public abstract void ON();

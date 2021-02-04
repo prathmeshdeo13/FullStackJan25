@@ -1,5 +1,5 @@
-package Try_catch;
-public class trycatchDemo {
+package try_catch;
+public class TrycatchDemo {
 
     public static void main(String[] args) {
         try {
@@ -8,8 +8,12 @@ public class trycatchDemo {
             int k = i / j;
 
             System.out.println(k);
+            String s = null;
+            int sle = s.length();
+        }catch(ArithmeticException a){
+            System.out.println("ArithmeticException:"+a);
         } catch (Exception e) {
-            System.out.println("Expection:" + e);
+            System.out.println("Exception:"+e);
         }
 
                 System.out.println("Hello");

@@ -1,0 +1,30 @@
+package assignment;
+
+import java.util.Scanner;
+
+public class Assignment2 {
+
+    public static void main(String[] args) {
+        int x;
+        int y;
+        int z;
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the first number:");
+        x = s.nextInt();
+        System.out.println("Enter the second number:");
+        y = s.nextInt();
+        System.out.println("Enter the third number:");
+        z = s.nextInt();
+
+        if (x > y && x > z) {
+            System.out.println("The largest number is : " + x);
+        } else if (y > z) {
+            System.out.println("The largest number is :" + y);
+        } else {
+            System.out.println("The  largest  number is :" + z);
+        }
+    }
+}
+
+
