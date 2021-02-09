@@ -11,9 +11,9 @@ public class Assignment3 {
         num = scanner.nextInt();
 
         if (num > 0) {
-            System.out.println("The number is positive ");
+            System.out.println("The number is positive "+num);
         } else if (num < 0) {
-            System.out.println("The number is negative ");
+            System.out.println("The number is negative "+num);
         } else {
             System.out.println("Its zero");
         }

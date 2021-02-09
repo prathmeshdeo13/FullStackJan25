@@ -7,19 +7,19 @@ public class TrycatchDemo {
             int j = 0;
             int k = i / j;
 
-            System.out.println(k);
-            String s = null;
-            int sle = s.length();
+           // System.out.println(k);
+            //String s = null;
+          //  int sle = s.length();
         }catch(ArithmeticException a){
             System.out.println("ArithmeticException:"+a);
         } catch (Exception e) {
             System.out.println("Exception:"+e);
+        }finally {
+
+            System.out.println("Hello");
         }
 
-                System.out.println("Hello");
-
-
-        }
+    }
     }
 
 
