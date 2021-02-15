@@ -12,24 +12,16 @@ class Counter1{
       public static void main(String[] args) throws Exception {
             Counter1 c = new Counter1();
 
-            Thread t1 = new Thread(new Runnable() {
-
-
-                @Override
-                public void run(){
+            Thread t1 = new Thread(()->{
                     for (int i = 1; i <=1000; i++) {
                         c.increment();
                     }
-                }
-            });
+                });
 
-            Thread t2 = new Thread(new Runnable() {
-                @Override
-                public void run() {
+            Thread t2 = new Thread(()->{
                     for (int i = 1; i <= 1000; i++) {
                         c.increment();
                     }
-                }
             });
 
 
