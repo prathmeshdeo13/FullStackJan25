@@ -1,11 +1,12 @@
 package collection;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class ArrayList {
 
     public static void main(String[] args) {
-        List<Integer> list = new java.util.ArrayList<>();
+        List<Integer> list = (List<Integer>) new ArrayList();
         list.add(1);
         list.add(2);
         list.add(3);
@@ -45,6 +46,19 @@ public class ArrayList {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
+
         }
+
+
+        List<Integer> list2 = new LinkedList<>();
+        list2.add(25);
+        list2.add(26);
+        list2.add(28);
+        list2.add(27);
+        list2.add(30);
+
+
+        System.out.println("LinkedList->"+list2);
+
     }
 }
