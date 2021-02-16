@@ -30,7 +30,5 @@ public class EmployeeList {
         list.forEach(s->{
             System.out.println(s.id+" "+s.name+" "+s.add);
         });
-
-        list.sort(e);
     }
 }

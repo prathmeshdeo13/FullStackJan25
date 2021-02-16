@@ -14,7 +14,7 @@ public class CollectionDemo {
            collection.add(i);
        }
 
-       collection.remove(5);
+       collection.add(5);
 
        collection.forEach((s)-> {
            System.out.println(s);
