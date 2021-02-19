@@ -22,8 +22,19 @@ public class ArrayList1 {
 
         list3.addAll(list4);
         System.out.println(list3);
+        list3.set(1,12);
+        System.out.println(list3);
+
+        String s="Today";
+        String s1="Wednesday";
+
+        s.hashCode();
+        s1.hashCode();
 
 
+        System.out.println(s.hashCode());
+        System.out.println(s1.hashCode());
+        System.out.println(s.equals(s1));
 
     }
 }

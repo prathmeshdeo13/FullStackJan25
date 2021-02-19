@@ -12,6 +12,7 @@ public class QueueDemo {
         queue.add(4);
         queue.add(5);
 
+
         queue.forEach(s->{
             System.out.println(s);
         });
