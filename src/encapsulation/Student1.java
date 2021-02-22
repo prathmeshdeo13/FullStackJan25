@@ -10,7 +10,7 @@ public class Student1 {
     }
 
     public void setStudentid(int studentid) {
-        Studentid = studentid;
+        this.Studentid = studentid;
     }
 
     public String getStudentname() {
@@ -18,7 +18,7 @@ public class Student1 {
     }
 
     public void setStudentname(String studentname) {
-        Studentname = studentname;
+        this.Studentname = studentname;
     }
 
     public String getStudentadd() {
@@ -26,7 +26,7 @@ public class Student1 {
     }
 
     public void setStudentadd(String studentadd) {
-        Studentadd = studentadd;
+       this.Studentadd = studentadd;
     }
 
     public static void main(String[] args) {
