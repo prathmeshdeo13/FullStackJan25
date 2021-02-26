@@ -22,14 +22,24 @@ public class LambdaExpression {
 
         List<Integer> list = Arrays.asList(12,23,45,787);
 
-        Consumer consumer = new Consumer() {
+
+        Consumer<Integer> consumer1 = new Consumer<Integer>() {
             @Override
-            public void accept(Object o) {
-                System.out.println(o);
+            public void accept(Integer integer) {
+                System.out.println(integer);
             }
         };
 
-        list.forEach(consumer);
+        list.forEach(consumer1);
+
+        // if we want to multiply each value by 2
+//        Consumer<Integer>  consumer = (Integer i)->{
+//            System.out.println(i*2);
+//        };
+//
+//        list.forEach(s->{
+//            System.out.println(s*2);
+//        });
 
         MyInterface myInterface = ()->{
                 return "Hii";
@@ -38,7 +48,7 @@ public class LambdaExpression {
 
 
 
-
+//
 //
 //        MyInterface myInterface1 = ()-> System.out.println("In show method");
 //        myInterface1.show();
