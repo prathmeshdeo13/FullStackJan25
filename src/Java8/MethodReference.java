@@ -6,8 +6,8 @@ import java.util.List;
 public class MethodReference {
 
     public static void main(String[] args) {
-//        List<Integer> list = Arrays.asList(12, 55, 88, 656, 1478);
-//        list.forEach(System.out::println);
+        List<Integer> list = Arrays.asList(12, 55, 88, 656, 1478);
+        list.forEach(System.out::println);
 
 
 
@@ -25,8 +25,5 @@ public class MethodReference {
 
 @FunctionalInterface
 interface MyInterface3{
-
     String  msg();
-
-
 }
