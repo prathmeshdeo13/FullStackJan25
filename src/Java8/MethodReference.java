@@ -2,6 +2,7 @@ package Java8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.BiFunction;
 
 public class MethodReference {
 
@@ -14,6 +15,11 @@ public class MethodReference {
         MethodReference methodReference = new MethodReference();
         MyInterface3 myInterface3 = methodReference::display;
         System.out.println(myInterface3.msg());
+
+        BiFunction<Integer,Integer,Integer> addition =MyInterface4::add;
+
+        int i=addition.apply(5,12);
+        System.out.println(i);
     }
 
 
@@ -26,4 +32,12 @@ public class MethodReference {
 @FunctionalInterface
 interface MyInterface3{
     String  msg();
+}
+
+
+interface MyInterface4{
+
+    public static int add(int i,int j){
+        return i+j;
+    }
 }
