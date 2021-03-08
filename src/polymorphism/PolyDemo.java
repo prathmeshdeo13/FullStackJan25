@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class PolyDemo {
+public class  PolyDemo {
 // Method Overloading
 // Sequence of arguments
     public void show(int a,String b){
