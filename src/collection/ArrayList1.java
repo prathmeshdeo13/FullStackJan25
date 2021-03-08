@@ -20,6 +20,14 @@ public class ArrayList1 {
         list4.add(9);
         list4.add(10);
 
+        List<Integer> list5 = new ArrayList<>();
+        list5.add(11);
+        list5.add(12);
+        list5.add(13);
+        list5.add(14);
+        list5.add(15);
+
+
         list3.addAll(list4);
         System.out.println(list3);
         list3.set(1,12);
