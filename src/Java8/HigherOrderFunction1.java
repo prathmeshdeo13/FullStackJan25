@@ -30,6 +30,13 @@ public class HigherOrderFunction1 {
                 .apply("Shekhar","r");
 
         System.out.println(i);
+
+
+
+        int o=((BiFunction<String,String,Integer>)String::indexOf)
+                .andThen(Integer::intValue)
+                .apply("Rakesh","s");
+        System.out.println(o);
     }
 
 }

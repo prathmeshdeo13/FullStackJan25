@@ -20,6 +20,11 @@ public class MethodReference {
 
         int i=addition.apply(5,12);
         System.out.println(i);
+
+        BiFunction<Integer,Integer,Integer> multiplication=MyInterface5::multi;
+
+        int o=multiplication.apply(17,5);
+        System.out.println(o);
     }
 
 
@@ -35,9 +40,15 @@ interface MyInterface3{
 }
 
 
-interface MyInterface4{
+interface MyInterface4 {
 
-    public static int add(int i,int j){
-        return i+j;
+    public static int add(int i, int j) {
+        return i + j;
     }
+}
+
+interface MyInterface5{
+        public static int multi(int a , int b){
+            return a*b;
+        }
 }
