@@ -19,3 +19,6 @@ abstract class Multiplication<T>{
     abstract T multi(T i,T j);
 
 }
+
+
+
