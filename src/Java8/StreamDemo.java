@@ -20,6 +20,10 @@ public class StreamDemo {
         this.salary = salary;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public String toString() {
         return "StreamDemo{" +
@@ -52,6 +56,14 @@ public class StreamDemo {
 
         list.stream()
                 .filter(f->f.salary>=50000)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+
+
+
+        list.stream()
+                .filter(f->f.salary>=50000)
+                .map(StreamDemo::getName)
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
 
