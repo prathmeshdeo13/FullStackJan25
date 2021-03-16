@@ -23,12 +23,12 @@ public class MethodReference {
 
         BiFunction<Integer,Integer,Integer> multiplication=MyInterface5::multi;
 
-        int o=multiplication.apply(17,5);
-        System.out.println(o);
+        int x=multiplication.apply(17,5);
+        System.out.println(x);
     }
 
 
-    private String display() {
+    private String display()  {
         return "Bonjour";
     }
 }
