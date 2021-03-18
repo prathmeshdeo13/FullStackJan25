@@ -1,6 +1,7 @@
 package Java8;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -66,7 +67,6 @@ public class StreamDemo {
                 .map(StreamDemo::getName)
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
-
 
 
 
