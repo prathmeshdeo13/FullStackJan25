@@ -12,10 +12,10 @@ public class DateTimeDemo {
         System.out.println(date);
         System.out.println(System.currentTimeMillis());
 
-        LocalDate localDate = LocalDate.now().minusDays(1);
+        LocalDate localDate = LocalDate.now().minusDays(3);
         LocalDate localDate1 = LocalDate.now();
         System.out.println(localDate);
-        LocalDate localDate2 = LocalDate.now().plusDays(5);
+        LocalDate localDate2 = LocalDate.now().plusDays(8);
         System.out.println(localDate2);
         System.out.println(localDate2.getMonth());
         System.out.println(localDate2.isAfter(localDate1));
@@ -29,5 +29,10 @@ public class DateTimeDemo {
         System.out.println(localTime);
         LocalDate localDate4 = LocalDate.ofYearDay(2020,19);
         System.out.println(localDate4);
+        LocalDate localDate5 = LocalDate.of(2020,03,19);
+        System.out.println(localDate5);
+
+        LocalDate localDate6 = LocalDate.now(zoneId);
+        System.out.println(localDate6);
     }
 }
