@@ -11,7 +11,7 @@ public class HigherOrderFunction {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(0,1,2,3,4,5,6,7,8,9,10);
 
-        BiFunction<List<Integer>, Predicate<Integer>,List<Integer>> filter;
+        BiFunction<List<Integer>, Predicate<Integer>, List<Integer>> filter;
 
         filter = (lst,predicate)-> {
             List<Integer> result = new ArrayList<>();

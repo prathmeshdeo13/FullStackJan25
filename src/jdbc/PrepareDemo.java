@@ -17,6 +17,7 @@ public class PrepareDemo {
             System.out.println("Enter the Address->");
             Address = scanner.next();
 
+
             String insert = "Insert into employee(id,name,address) values(?,?,?)";
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java19janbatch?characterEncoding=latin1", "root", "password");
