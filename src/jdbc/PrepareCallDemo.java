@@ -1,9 +1,6 @@
 package jdbc;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Scanner;
 
 public class PrepareCallDemo {
@@ -24,14 +21,17 @@ public class PrepareCallDemo {
         Connection connection =
                 DriverManager.getConnection("jdbc:mysql://localhost:3306/java19janbatch?characterEncoding=latin1", "root", "password");
        // PreparedStatement preparedStatement = connection.prepareCall("Call getData()");
-        PreparedStatement preparedStatement = connection.prepareCall("?,?,?");
+        CallableStatement callableStatement= connection.prepareCall("Call InsertEmp(?,?,?)");
       //  preparedStatement.executeUpdate();
        // System.out.println("Execute Successfully..... ");
 
-        preparedStatement.setInt(1,id);
-        preparedStatement.setString(2,name);
-        preparedStatement.setString(3,address);
+        callableStatement.setInt(1,id);
+        callableStatement.setString(2,name);
+        callableStatement.setString(3,address);
+
+        callableStatement.executeUpdate();
         System.out.println("Execute Succesfully");
+
 
     }
 }
