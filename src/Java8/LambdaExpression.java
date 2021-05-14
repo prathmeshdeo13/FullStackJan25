@@ -25,7 +25,7 @@ public class LambdaExpression {
 
         Consumer<Integer> consumer1 = new Consumer<Integer>() {
             @Override
-            public void accept(Integer integer) {
+            public void accept(Integer integer)      {
                 System.out.println(integer);
             }
         };

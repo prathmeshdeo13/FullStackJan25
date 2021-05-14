@@ -11,7 +11,7 @@ public abstract class PlayDemo {
     }
 
 
-    class Football extends abstraction.PlayDemo {
+    class Football extends PlayDemo {
 
         @Override
         public void play() {
@@ -26,7 +26,7 @@ public abstract class PlayDemo {
     }
 
 
-    class Cricket extends abstraction.PlayDemo {
+    class Cricket extends PlayDemo {
 
         @Override
         public void play() {
