@@ -18,10 +18,8 @@ public class DefaultAndStaticMethod implements MyInterface6,MyInterface7 {
 
     @Override
     public String display() {
-        return "Au Revoir";
+        return "Custom Implementation";
     }
-
-
 }
 
 
@@ -39,7 +37,7 @@ interface MyInterface6 {
     }
 }
 
-    interface MyInterface7 {
+interface MyInterface7 {
         default String display() {
             return "Enchanter";
         }

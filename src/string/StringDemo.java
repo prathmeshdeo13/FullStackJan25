@@ -9,7 +9,7 @@ public class StringDemo {
 
         String s1 = new String("Pune");
         String s2="Mumbai";
-        s2.concat("Pune");
+        s2.concat("Pune");  
         s2=s2.concat("Pune"); // String literal
         System.out.println(s2);
 
