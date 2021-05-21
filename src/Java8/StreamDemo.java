@@ -3,6 +3,7 @@ package Java8;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class StreamDemo {
@@ -67,6 +68,14 @@ public class StreamDemo {
                 .map(StreamDemo::getName)
                 .collect(Collectors.toList())
                 .forEach(System.out::println);
+
+
+
+        List<String> Str = Arrays.asList("Moi","nom","est","Prathamesh");
+        Predicate<String> neg = x->x.startsWith("Moi");
+
+        List<String> list2 = Str.stream().filter(neg.negate()).collect(Collectors.toList());
+        System.out.println(list2);
 
 
 
