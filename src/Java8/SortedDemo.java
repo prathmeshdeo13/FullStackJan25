@@ -8,12 +8,12 @@ import java.util.List;
 public class SortedDemo {
     public static void main(String[] args) {
 
-//
-//        List<Integer> list = Arrays.asList(2,6,4,8,3,5,7);
-//        list.stream()
-//              .sorted()//Ascending order
-//             .sorted(Collections.reverseOrder()) // Descending order
-//             .forEach(System.out::println);
+
+        List<Integer> list = Arrays.asList(2,6,4,8,3,5,7);
+        list.stream()
+              .sorted()//Ascending order
+             .sorted(Collections.reverseOrder()) // Descending order
+             .forEach(System.out::println);
 
 
         Employee obj1 = new Employee(11,"Neha",50000.00);
@@ -22,7 +22,7 @@ public class SortedDemo {
 
         List<Employee> list1 = Arrays.asList(obj1,obj2,obj3);
         list1.stream()
-             .sorted(Comparator.comparing(Employee::getSalary).reversed())
+             .sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
               .forEach(System.out::println);
     }
 }
