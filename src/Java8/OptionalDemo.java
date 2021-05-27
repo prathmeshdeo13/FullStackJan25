@@ -2,7 +2,7 @@ package Java8;
 
 import java.util.Optional;
 
-public class TpDemo1 {
+public class OptionalDemo {
     public static void main(String[] args) throws  Exception {
         Customer customer = new Customer(1, "Rajesh", "null");
 //        System.out.println(customer.getEmail());
