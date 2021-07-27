@@ -2,7 +2,7 @@ package Java8;
 
 import java.util.StringJoiner;
 
-public class ToDemo {
+public class StringJoiner1 {
     public static void main(String[] args) {
 
 

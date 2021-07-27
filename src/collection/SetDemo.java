@@ -3,7 +3,7 @@ package collection;
 import java.util.*;
 import java.util.ArrayList;
 
-public class SetDemo {
+public class  SetDemo {
 
     public static void main(String[] args) {
 

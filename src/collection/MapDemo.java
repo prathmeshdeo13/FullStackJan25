@@ -5,12 +5,12 @@ import java.util.Map;
 
 public class MapDemo {
     public static void main(String[] args) {
-        Map<Integer,String> map=new HashMap<>();
-        map.put(1,"String 11");
-        map.put(2,"String 12");
-        map.put(3,"String 13");
-        map.put(4,"String 14");
-        map.put(5,"String 15");
+        Map<String,Integer> map=new HashMap<>();
+        map.put("String 11",21);
+        map.put("String 12",22);
+        map.put("String 13",23);
+        map.put("String 14",24);
+        map.put("String 15",25);
 
 
         for (Map.Entry m:map.entrySet()) {
